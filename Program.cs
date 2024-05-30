@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+/// <summary>
+/// Jesse Weeder
+/// ST10320806
+/// Module PROG6221
+/// </summary>
 namespace ST10320806_PROG6221_Part2
 {
     internal class Program
