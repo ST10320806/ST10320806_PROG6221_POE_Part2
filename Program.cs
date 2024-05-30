@@ -30,7 +30,8 @@ namespace ST10320806_PROG6221_Part2
                 Console.WriteLine("4. Reset recipe quantities");
                 Console.WriteLine("5. Clear all recipes");
                 Console.WriteLine("6. Calculate the total Calories in a recipe");
-                Console.WriteLine("7. Exit");
+                Console.WriteLine("7. Display all recipes alphabetically");
+                Console.WriteLine("8. Exit");
 
 
                 Console.Write("Please enter your choice: ");
@@ -71,6 +72,9 @@ namespace ST10320806_PROG6221_Part2
                         rec1.CalculateTotalCalories();
                         break;
                     case "7":
+                        rec1.DisplayRecipesAlphabetically();
+                        break;
+                    case "8":
                         exit = true;
                         break;
 

@@ -3,7 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+/**************REFERENCES*****************
+https://www.geeksforgeeks.org/c-sharp-dictionary-with-examples/
+https://www.tutorialsteacher.com/csharp/csharp-dictionary
+https://www.c-sharpcorner.com/UploadFile/mahesh/how-to-find-a-value-in-a-dictionary-with-C-Sharp/
+Used ClaudeAi for debugging purposes
+ */
 namespace ST10320806_PROG6221_Part2
 {
     internal class RecipeManager
@@ -126,7 +131,20 @@ namespace ST10320806_PROG6221_Part2
             }
             Console.ForegroundColor = ConsoleColor.White;
         }
-//------------------------------------------------------------------------------------------------//
+        //------------------------------------------------------------------------------------------------//
+        public void DisplayRecipesAlphabetically()//Method for displaying all recipes alphabetically
+        {
+            Console.ForegroundColor= ConsoleColor.Yellow;
+            var sortedRecipes = recipeBook.Keys.OrderBy(name => name).ToList();//ordering recipes in the dictionary alphabetically
+
+            Console.WriteLine("\nRecipes in alphabetical order:");
+            foreach (var recipeName in sortedRecipes)
+            {
+                Console.WriteLine(recipeName);
+            }
+            Console.ForegroundColor = ConsoleColor.White;
+        }
+        //------------------------------------------------------------------------------------------------//
         public void ScaleRecipe(int scaleFactor) // Method for scaling the ingredients
         {
             sFactor.Add(scaleFactor); // adding the scaling factor to the sFactor list
